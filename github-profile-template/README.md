@@ -2,9 +2,12 @@
 
 ## About Me
 
-🎓 Currently learning web development at Devslopes
+🎓 Currently learning web development at Devslopes 
+
 💻 Passionate about creating user-friendly web applications
+
 🌱 Learning HTML, CSS, JavaScript, and modern web frameworks
+
 📫 How to reach me: [your.email@example.com](mailto:your.email@example.com)
 
 ## 🛠️ Technologies & Tools
