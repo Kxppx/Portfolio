@@ -97,8 +97,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // TODO: Initialize EmailJS during workshop
-// SETUP: Sign up at https://www.emailjs.com/ and get your public key
-emailjs.init("BbMhPFIsjKV3Ft2IS");
+emailjs.init("cZvYq-4jqm8pazMGa");
 
 // TODO: Add floating contact button functionality during workshop
 
@@ -142,7 +141,7 @@ quickContactForm.addEventListener("submit", (e) => {
   // Send email using EmailJS
   // Replace 'service_id' and 'template_id' with your actual IDs
   emailjs
-    .send("service_s4ekpd4", "template_uehxd7y", {
+    .send("service_2q9gvlg", "template_o2n5wpu", {
       from_email: email,
       subject: subject,
       message: message,
