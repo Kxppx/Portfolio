@@ -34,11 +34,19 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 window.addEventListener("scroll", () => {
   let current = "";
   const sections = document.querySelectorAll("section");
+  const scrollPos = window.scrollY;
 
-  sections.forEach((section) => {
+  sections.forEach((section, index) => {
     const sectionTop = section.offsetTop;
     const sectionHeight = section.clientHeight;
-    if (scrollY >= sectionTop - 200) {
+    const offset = window.innerHeight / 4;
+    // Check if we're inside the section OR at the very bottom of the page
+    if (
+      (scrollPos >= sectionTop - offset &&
+        scrollPos < sectionTop + sectionHeight - offset) ||
+      (index === sections.length - 1 &&
+        window.innerHeight + scrollPos >= document.body.offsetHeight - 2)
+    ) {
       current = section.getAttribute("id");
     }
   });
