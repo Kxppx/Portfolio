@@ -1,35 +1,3 @@
-/* Reset and Base Styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-:root {
-  --primary-color: white; /* #2563eb */
-  --secondary-color: grey; /* #1e293b */
-  --text-color: #f8f8ff; /* #333 */
-  --bg-color: #212020; /* #f8fafc */
-  --black: black; /* #ffffff */
-  --gray-light: grey; /* #e2e8f0 */
-  --white: white; /* #64748b */
-  --transition: all 0.3s ease;
-}
-
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, sans-serif;
-  line-height: 1.6;
-  color: var(--text-color);
-  background-color: var(--bg-color);
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
 /* Navigation */
 .navbar {
   background: var(--black);
@@ -47,10 +15,11 @@ body {
   padding: 1rem 20px;
 }
 
-.logo {
+.logo a {
   font-size: 1.5rem;
   font-weight: bold;
   color: var(--primary-color);
+  text-decoration: none;
 }
 
 .nav-links {
@@ -295,57 +264,6 @@ section {
   padding: 2rem 0;
 }
 
-/* Mobile Responsive */
-@media (max-width: 768px) {
-  .nav-links {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background: var(--black);
-    flex-direction: column;
-    padding: 1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-
-  .nav-links.active {
-    display: flex;
-  }
-
-  .hamburger {
-    display: flex;
-  }
-
-  .hamburger.active span:nth-child(1) {
-    transform: rotate(-45deg) translate(-5px, 6px);
-  }
-
-  .hamburger.active span:nth-child(2) {
-    opacity: 0;
-  }
-
-  .hamburger.active span:nth-child(3) {
-    transform: rotate(45deg) translate(-5px, -6px);
-  }
-
-  .hero-title {
-    font-size: 2rem;
-  }
-
-  .hero-subtitle {
-    font-size: 1.2rem;
-  }
-
-  .section-title {
-    font-size: 2rem;
-  }
-
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
 /* Smooth Scrolling */
 html {
   scroll-behavior: smooth;
@@ -370,21 +288,6 @@ body {
   font-size: 0.8rem;
   font-weight: 600;
 }
-.heart {
-  color: #e74c3c;
-  display: inline-block;
-  animation: heartbeat 1.5s ease-in-out infinite;
-}
-
-@keyframes heartbeat {
-  0%,
-  100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-}
 
 /* Icon styles in buttons */
 .btn i {
@@ -404,8 +307,6 @@ body {
   height: 2px;
   background-color: var(--primary-color);
 }
-
-/* TODO: Add floating contact button styles during workshop */
 
 .floating-contact-btn {
   position: fixed;
@@ -438,8 +339,6 @@ body {
   transform: scale(0.8);
 }
 
-/* TODO: Add email modal styles during workshop */
-
 .email-modal {
   display: none;
   position: fixed;
@@ -467,17 +366,6 @@ body {
   width: 100%;
   position: relative;
   animation: modalSlideIn 0.3s ease;
-}
-
-@keyframes modalSlideIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 .modal-close {
