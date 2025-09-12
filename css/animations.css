@@ -1,0 +1,15 @@
+/* Glow Animation */
+.glow {
+  color: #fff;
+  text-shadow: 0 0 5px white, 0 0 10px white, 0 0 20px white;
+  animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px lightgrey, 0 0 10px lightgrey, 0 0 20px lightgrey;
+  }
+  to {
+    text-shadow: 0 0 20px lightgrey, 0 0 40px lightgrey, 0 0 60px lightgrey;
+  }
+}
