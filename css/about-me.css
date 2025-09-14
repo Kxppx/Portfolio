@@ -1,0 +1,70 @@
+:root {
+  --primary-color: white;
+  --secondary-color: grey;
+  --text-color: #f8f8ff;
+  --bg-color: #212020;
+  --black: black;
+  --gray-light: lightgrey;
+  --transition: all 0.3s ease;
+}
+
+.navbar {
+  padding: 20px 0;
+  background-color: var(--black);
+}
+.navbar .container {
+  display: flex;
+  justify-content: flex-end;
+}
+a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.introduction {
+  background: linear-gradient(
+    135deg,
+    var(--secondary-color),
+    var(--primary-color)
+  );
+  color: var(--bg-color);
+  font-weight: 500;
+}
+
+.introduction .container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 40px 0;
+}
+
+.img-wrapper {
+  height: 250px;
+  width: 200px;
+  border: 5px solid black;
+  border-radius: 10px;
+}
+
+.img-wrapper img {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+  background-position: center;
+  border-radius: 5px;
+}
+
+.passions {
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  background-color: var(--secondary-color);
+  color: var(--black);
+  text-align: center;
+  padding: 2rem 0;
+}

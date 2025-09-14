@@ -104,11 +104,10 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// TODO: Initialize EmailJS during workshop
+// Initialize EmailJS during workshop
 emailjs.init("cZvYq-4jqm8pazMGa");
 
-// TODO: Add floating contact button functionality during workshop
-
+// Add floating contact button functionality during workshop
 const floatingContactBtn = document.getElementById("floatingContactBtn");
 const emailModal = document.getElementById("emailModal");
 const modalClose = document.getElementById("modalClose");
@@ -147,7 +146,6 @@ quickContactForm.addEventListener("submit", (e) => {
   submitBtn.disabled = true;
 
   // Send email using EmailJS
-  // Replace 'service_id' and 'template_id' with your actual IDs
   emailjs
     .send("service_2q9gvlg", "template_o2n5wpu", {
       from_email: email,

@@ -1,3 +1,14 @@
+:root {
+  --primary-color: white; /* #2563eb */
+  --secondary-color: grey; /* #1e293b */
+  --text-color: #f8f8ff; /* #333 */
+  --bg-color: #212020; /* #f8fafc */
+  --black: black; /* #ffffff */
+  --gray-light: grey; /* #e2e8f0 */
+  --white: white; /* #64748b */
+  --transition: all 0.3s ease;
+}
+
 /* Navigation */
 .navbar {
   background: var(--black);
